@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.header{
+    background-color: #fff9c4;
+    padding: 15px;
+    margin: .1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    margin-left: 2%;
+    color: black;
+    font-size: 30px;
+}
+
+.header .nav{
+    margin-right: 2%;
+}
+
+.header .nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+    color: black;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .article{
+    background-color: #b3e5fc;    
+    margin: .1%;
+    flex: 70%;
+}
+
+.row .article .section{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row .article .section .img img{
+    width: 100%;
+}
+
+.row .article .section-info{
+    padding: 50px;
+}
+
+.row .article .section-info h2,
+.row .article .section-info p{
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.row .aside{
+    background-color: #e6ffff;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    margin: .1%;
+}
+
+.aside .aside-news img{
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.aside .hastag,
+.aside .aside-news,
+.aside h2{
+    padding: 25px;
+}
+
+.footer {
+    background-color: #fff9c4;
+    padding: 30px;
+    margin: .1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*form*/
+
+.article .section-form{
+    background-color: #b3e5fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .1%;
+}
+
+.article .section-form form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article .section-form form h3{
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.article .section-form form input,
+.article .section-form form textarea{
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px;
+}
+
+.article .section-form form textarea{
+    resize: none;
+    width: 100%;
+}
+
+.article .section-form form .btn{
+    margin: 25px;
+    padding: 5px 50px;
+    font-size: 25px;
+    background-color: #fff9c4;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:850px) {
+    .row .aside{
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+
